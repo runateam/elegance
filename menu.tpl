@@ -1,6 +1,8 @@
 <div class="scrollspy">
   <div class="brand">
-    <img src="./logo.svg" alt="{{ .Name }}" class="logo img-responsive" />
+    <div class="logo fallback">
+      <img src="./logo.png" alt="{{ .Name }}" class="logo img-responsive" />
+    </div>
     <h1>{{ .Name }}</h1>
   </div>
 
