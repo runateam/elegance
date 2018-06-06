@@ -1,0 +1,363 @@
+body {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    line-height: 1.5;
+    transition: linear left 0.1s;
+    background-color: #f8f8f8;
+    color: #808080;
+    word-break: break-all;
+}
+
+h1 {
+    margin-top: 5px;
+    text-shadow: 1px 1px 3em #848474;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+    color: #505050;
+}
+
+h2:after {
+    content: ' ';
+}
+
+h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+h4 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+h5 {
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.row > h3,
+.row > h4,
+.row > h5 {
+  padding: 0 15px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    display: none;
+    position: absolute;
+    margin-left: 8px;
+}
+
+hr {
+    margin: 0; width: 55%
+}
+
+p, strong, small, code {
+    word-break: break-word !important;
+}
+
+IMG {
+    max-width: 100%;
+}
+.markdown {
+    max-width: 610px;
+    display: inline-block;
+}
+.markdown pre, .doc pre {
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+}
+.markdown *[class*="hljs"], .doc code[class*="hljs"], .doc pre *[class*="hljs"] {
+    background-color: #FAFAFA;
+    color: #808080;
+}
+
+
+h1:hover a, h2:hover a, h3:hover a, h4:hover a, h5:hover a, h6:hover a {
+    color: #a5a5a5;
+    display: initial;
+}
+
+.col-md-12 {
+    padding-left: 2em;
+}
+
+.nav.nav-tabs > li > a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.tab-content {
+    margin-top: 15px
+}
+
+table {
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+td {
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color : rgba(0, 0, 0, 0.05);
+}
+
+.clear {
+    clear:both;
+}
+
+
+pre {
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+}
+
+code {
+  color: #ccc;
+  background: #2d2d2d;
+  border-radius: 0;
+}
+
+pre code {
+    margin: -9.5px;
+    font-family: "Courier", sans-serif;
+
+}
+
+#doc-general-notes {
+    font-weight: normal;
+}
+
+.response-text-sample {
+    padding: 0px !important;
+}
+
+.response-text-sample pre {
+    margin-bottom: 0px;
+}
+
+.navbar-toggle {
+  background: #333333;
+  z-index: 9999999;
+}
+.navbar-toggle .icon-bar{
+  background: #f3f3f3;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100% !important;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #333333;
+    padding-top: 20px;
+}
+
+#sidebar-wrapper .brand .logo {
+  max-width: 150px;
+  margin: 10px auto;
+}
+
+#sidebar-wrapper .brand h1 {
+  color: #f3f3f3;
+  font-size: 2em;
+}
+
+#sidebar-wrapper ul {
+    width: 260px;
+    list-style: none;
+}
+
+#sidebar-wrapper ul li {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#sidebar-wrapper ul li a:hover {
+    background: inherit;
+    text-decoration: none;
+}
+
+#sidebar-wrapper ul li a {
+    display: block;
+    color: #b3b3b3; // #ECF0F1;
+    padding: 6px 15px;
+}
+
+#sidebar-wrapper .icon {
+    color:#b3b3b3;
+}
+
+#sidebar-wrapper .glyphicon-collapse-up {
+    display: none;
+}
+
+#sidebar-wrapper .active .glyphicon-collapse-down {
+    display: none;
+}
+
+#sidebar-wrapper ul li ul {
+    padding-left: 25px;
+}
+
+#sidebar-wrapper ul li ul li {
+    font-weight: normal;
+    font-size: 90%;
+}
+
+#sidebar-wrapper ul li ul li a {
+    padding: 1px 0px;
+}
+
+#sidebar-wrapper ul li a:hover,
+#sidebar-wrapper ul li a:focus {
+    color: #efefef;
+    border-right: solid 1px #efefef;
+}
+
+#sidebar-wrapper ul li.active > a {
+    color: #efefef;
+    border-left: solid 4px #007bff;
+}
+
+#sidebar-wrapper ul li.active > ul > li.active a {
+  padding-left: 4px;
+}
+
+#sidebar-wrapper .active .glyphicon-collapse-up {
+    color: #efefef;
+    display: inline-block;
+}
+
+#sidebar-wrapper ul li:not(.active) ul {
+    display: none;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+@media (min-width:768px) {
+    #page-content-wrapper {
+        padding-left:250px;
+    }
+}
+
+.markdown H3,  .markdown H2, .markdown H1 {
+    text-transform: uppercase;
+    font-size: 100%;
+}
+
+.panel-body, .tab-content {
+    padding: 0px;
+}
+
+.panel-dark {
+    background-color: #222;
+    border-color: #444;
+}
+
+.panel-dark > .panel-heading {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #444;
+    padding: 4px 8px;
+}
+
+.markdown pre, .doc pre {
+    margin: 0px;
+    min-height: 50px;
+    max-height: 250px;
+}
+
+pre:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width:768px) {
+    .splitted {
+        background: linear-gradient(90deg, transparent 65%, #3c3c33 35%);
+    }
+}
+
+.main-title {
+    white-space: normal;
+    display: inline-block;
+}
+
+.req-type {
+  font-weight: bold;
+}
+.req-GET {
+  color: #3eb63e; }
+
+.req-POST {
+  color: #f5a623; }
+
+.req-PATCH {
+  color: #666666; }
+
+.req-PUT {
+  color: #4a90e2; }
+
+.req-DELETE {
+  color: #ed4b48; }
+
+
+.no-padding  {
+      padding-left: 0 !important;
+}
+
+.resp-code {
+  margin: 1em 0;
+}
+
+.response, .request {
+  margin-bottom: 50px;
+}
+
+.headers dl {
+  margin: 15px 0;
+}
+
+.split .right {
+  background: #333333;
+  color: #f3f3f3;
+}
+
+.split .right.empty {
+  display: none;
+}
+
+.split .left,
+.split .right {
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .split {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .split .left,
+  .split .right {
+    width: 50%;
+  }
+
+  .split .right.empty {
+    display: block;
+  }
+}
