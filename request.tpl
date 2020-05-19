@@ -21,7 +21,7 @@
     <h5>Headers</h5>
     <dl class="dl-horizontal col-xs-12">
       {{ range $req.Headers }}
-        <dt class="name col-md-3 col-xs-12">{{ .Name }}</dt>
+        <dt class="name col-md-3 col-xs-12">{{ .Key }}</dt>
         <dd class="value col-md-9 col-xs-12">{{ .Value }}</dd>
       {{ end }}
     </dl>
