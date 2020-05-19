@@ -59,6 +59,7 @@
               <tr>
                 <th>{{ .Name }}</th>
                 <td>{{ .Type }}</td>
+                <td>{{ .Required }}</td>
                 <td>{{ .Description }}</td>
               </tr>
             {{ end }}
